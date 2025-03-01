@@ -26,7 +26,7 @@
     <header class="header">
       <div class="container header-container">
         <nav class="header-nav">
-          <a href="./index.html" class="logo">
+          <a href="./index.html" class="logo header-logo">
             Web<span class="studio-logo">Studio</span>
           </a>
           <ul class="nav-link">
@@ -49,6 +49,11 @@
             </li>
           </ul>
         </address>
+        <button class="btn" type="button">
+          <svg class="btn-icon" width="24" height="24">
+            <use href="./images/icons.svg#icon-cross"></use>
+          </svg>
+        </button>
       </div>
     </header>
 
@@ -59,7 +64,9 @@
         <div class="container">
           <h1 class="business">Effective Solutions for Your Business</h1>
 
-          <button class="button">Order Service</button>
+          <button class="button" type="button" data-modal-open>
+            Order Service
+          </button>
         </div>
       </section>
 
@@ -189,28 +196,28 @@
                 <h3 class="text-title">Tom Ford</h3>
                 <p class="text">Frontend Developer</p>
                 <ul class="social-links">
-                  <li>
+                  <li class="social-links-li">
                     <a href="/" target="_blank" class="link-icon">
                       <svg class="icon" width="16" height="16">
                         <use href="./images/icons.svg#icon-instagram"></use>
                       </svg>
                     </a>
                   </li>
-                  <li>
+                  <li class="social-links-li">
                     <a href="/" target="_blank" class="link-icon">
                       <svg class="icon" width="16" height="16">
                         <use href="./images/icons.svg#icon-twitter"></use>
                       </svg>
                     </a>
                   </li>
-                  <li>
+                  <li class="social-links-li">
                     <a href="/" target="_blank" class="link-icon">
                       <svg class="icon" width="16" height="16">
                         <use href="./images/icons.svg#icon-facebook"></use>
                       </svg>
                     </a>
                   </li>
-                  <li>
+                  <li class="social-links-li">
                     <a href="/" target="_blank" class="link-icon"
                       ><svg class="icon" width="16" height="16">
                         <use href="./images/icons.svg#icon-linkedin"></use>
@@ -232,28 +239,28 @@
                 <h3 class="text-title">Camila Garcia</h3>
                 <p class="text">Marketing</p>
                 <ul class="social-links">
-                  <li>
+                  <li class="social-links-li">
                     <a href="/" target="_blank" class="link-icon">
                       <svg class="icon" width="16" height="16">
                         <use href="./images/icons.svg#icon-instagram"></use>
                       </svg>
                     </a>
                   </li>
-                  <li>
+                  <li class="social-links-li">
                     <a href="/" target="_blank" class="link-icon">
                       <svg class="icon" width="16" height="16">
                         <use href="./images/icons.svg#icon-twitter"></use>
                       </svg>
                     </a>
                   </li>
-                  <li>
+                  <li class="social-links-li">
                     <a href="/" target="_blank" class="link-icon">
                       <svg class="icon" width="16" height="16">
                         <use href="./images/icons.svg#icon-facebook"></use>
                       </svg>
                     </a>
                   </li>
-                  <li>
+                  <li class="social-links-li">
                     <a href="/" target="_blank" class="link-icon"
                       ><svg class="icon" width="16" height="16">
                         <use href="./images/icons.svg#icon-linkedin"></use>
@@ -275,28 +282,28 @@
                 <h3 class="text-title">Daniel Wilson</h3>
                 <p class="text">UI Designer</p>
                 <ul class="social-links">
-                  <li>
+                  <li class="social-links-li">
                     <a href="/" target="_blank" class="link-icon">
                       <svg class="icon" width="16" height="16">
                         <use href="./images/icons.svg#icon-instagram"></use>
                       </svg>
                     </a>
                   </li>
-                  <li>
+                  <li class="social-links-li">
                     <a href="/" target="_blank" class="link-icon">
                       <svg class="icon" width="16" height="16">
                         <use href="./images/icons.svg#icon-twitter"></use>
                       </svg>
                     </a>
                   </li>
-                  <li>
+                  <li class="social-links-li">
                     <a href="/" target="_blank" class="link-icon">
                       <svg class="icon" width="16" height="16">
                         <use href="./images/icons.svg#icon-facebook"></use>
                       </svg>
                     </a>
                   </li>
-                  <li>
+                  <li class="social-links-li">
                     <a href="/" target="_blank" class="link-icon"
                       ><svg class="icon" width="16" height="16">
                         <use href="./images/icons.svg#icon-linkedin"></use>
@@ -448,7 +455,7 @@
     </main>
 
     <footer class="footer">
-      <div class="container">
+      <div class="container footer-container">
         <div class="footer-div">
           <a href="./index.html" class="footer-logo"
             >Web<span class="studio-logo-footer">Studio</span>
@@ -517,9 +524,9 @@
       </div>
     </footer>
 
-    <div class="modal-overlay">
+    <div class="modal-overlay" data-modal>
       <div class="modal">
-        <button class="btn-overlay" type="button">
+        <button data-modal-close class="btn-overlay" type="button">
           <svg class="icon-input-wrapper-icon-cross" width="8" height="8">
             <use href="./images/icons.svg#icon-cross"></use>
           </svg>
@@ -601,5 +608,6 @@
         </form>
       </div>
     </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
